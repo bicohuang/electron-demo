@@ -39,21 +39,21 @@ export default {
         let jdata = JSON.parse(data);
         for (let i = 0; i < jdata.length; i++) {
           let item ={
-            id:fun(jdata[i].code),
+            id:substrFun(jdata[i].code),
             name:jdata[i].name
           }
           j.push(item);
           if(jdata[i].children!=null){
             for (let k = 0; k < jdata[i].children.length; k++) {
               let item ={
-                id:fun(jdata[i].children[k].code),
+                id:substrFun(jdata[i].children[k].code),
                 name:jdata[i].children[k].name
               }
               j.push(item);
               if(jdata[i].children[k].children!=null){
                 for (let l = 0; l < jdata[i].children[k].children.length; l++) {
                   let item ={
-                    id:fun(jdata[i].children[k].children[l].code),
+                    id:substrFun(jdata[i].children[k].children[l].code),
                     name:jdata[i].children[k].children[l].name
                   }
                   j.push(item);
@@ -69,9 +69,9 @@ export default {
           console.log("JSON data is saved.");
         })
       })
-      let fun= function (data){
+      let substrFun= function (data){
         let result =data.toString().substr(0,6)
-        return result;
+        return  parseInt(result);
       }
     }
   }

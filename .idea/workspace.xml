@@ -6,10 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d68228f3-55be-42a7-828d-bfde873b415d" name="默认的" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/renderer/components/baidu.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/baidu.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/sqlite.db" beforeDir="false" afterPath="$PROJECT_DIR$/static/sqlite.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,6 +82,7 @@
       <workItem from="1608029969987" duration="4087000" />
       <workItem from="1608044161576" duration="926000" />
       <workItem from="1608381720463" duration="6246000" />
+      <workItem from="1608452765113" duration="792000" />
     </task>
     <servers />
   </component>
