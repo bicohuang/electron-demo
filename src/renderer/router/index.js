@@ -15,9 +15,9 @@ export default new Router({
       redirect: '/'
     }
     ,{
-      path: '/baidu',
-      name: 'baidu',
-      component: require('@/components/baidu').default
+      path: '/lier',
+      name: 'lier',
+      component: require('@/components/lier').default
     }
   ]
 })
