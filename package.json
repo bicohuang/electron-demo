@@ -23,9 +23,7 @@
     "postinstall": ""
   },
   "dependencies": {
-    "ant-design-vue": "^1.7.2",
     "axios": "^0.18.0",
-    "sqlite3": "^5.0.0",
     "vue": "^2.5.16",
     "vue-electron": "^1.0.6",
     "vue-router": "^3.0.1",

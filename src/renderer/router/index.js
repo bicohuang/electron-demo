@@ -14,10 +14,5 @@ export default new Router({
       path: '*',
       redirect: '/'
     }
-    ,{
-      path: '/lier',
-      name: 'lier',
-      component: require('@/components/lier').default
-    }
   ]
 })

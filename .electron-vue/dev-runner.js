@@ -4,7 +4,7 @@ const chalk = require('chalk')
 const electron = require('electron')
 const path = require('path')
 const { say } = require('cfonts')
-const { spawn } = require('child_process')
+const { spawn,exec } = require('child_process')
 const webpack = require('webpack')
 const WebpackDevServer = require('webpack-dev-server')
 const webpackHotMiddleware = require('webpack-hot-middleware')
@@ -97,15 +97,16 @@ function startMain () {
 
       logStats('Main', stats)
 
-      if (electronProcess && electronProcess.kill) {
-        manualRestart = true
-        process.kill(electronProcess.pid)
-        electronProcess = null
-        startElectron()
-
-        setTimeout(() => {
-          manualRestart = false
-        }, 5000)
+      if(electronProcess && electronProcess.kill) {
+        manualRestart = 'true'
+        const pid = electronProcess.pid
+        exec('TASKKILL /F /IM electron.exe', function(err, data) {
+          if(err) console.log(err)
+          else console.log('kill pid: '+ pid +' success!')
+          electronProcess = 'null'
+          startElectron()
+          manualRestart = 'false'
+        })
       }
 
       resolve()
