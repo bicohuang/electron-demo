@@ -14,5 +14,10 @@ export default new Router({
       path: '*',
       redirect: '/'
     }
+    ,{
+      path: '/Header',
+      name: 'Header',
+      component: require('@/components/Header').default
+    }
   ]
 })

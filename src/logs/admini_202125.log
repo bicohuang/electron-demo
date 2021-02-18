@@ -1,0 +1,11 @@
+2021-02-05 10:22:27 info INFO admini  初始化
+2021-02-05 10:22:27 console INFO admini  consoleLog
+2021-02-05 10:22:27 console WARN admini  sss
+2021-02-05 10:22:27 console WARN admini  %cElectron Security Warning (Insecure Content-Security-Policy) font-weight: bold; This renderer process has either no Content Security
+    Policy set or a policy with "unsafe-eval" enabled. This exposes users of
+    this app to unnecessary security risks.
+
+For more information and help, consult
+https://electronjs.org/docs/tutorial/security.
+This warning will not show up
+once the app is packaged.
