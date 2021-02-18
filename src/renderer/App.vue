@@ -21,7 +21,6 @@ export default {
         this.loginit({appAccount: 'admini', appPath: './src'})
         this.addLog({level: 'info', info: '初始化'})
         console.log('consoleLog')
-        console.warn('sss')
     }
 }
 </script>

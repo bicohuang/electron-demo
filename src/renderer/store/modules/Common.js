@@ -1,13 +1,9 @@
 //import sqlite3 from "sqlite3";
-const  state ={
-    key:{
-
-    }
+const state = {
+    key: {}
 }
-const getters={
-
-}
-const  mutations ={
+const getters = {}
+const mutations = {
     init(state) {
         debugger
         // let database = new sqlite3.Database("mydatebase.db", function(err) {
@@ -16,8 +12,7 @@ const  mutations ={
 
     }
 }
-const actions ={
-}
+const actions = {}
 export default {
     state,
     getters,
